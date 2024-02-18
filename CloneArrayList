@@ -1,0 +1,20 @@
+//16. Write a Java program to clone an array list to another array list.
+
+package collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CloneArrayList {
+     public static void main(String[] args) {
+    	 ArrayList ref=new ArrayList();
+ 		ref.add(10);
+ 		ref.add(20);
+ 		ref.add(30);
+ 		ref.add(5);
+ 		ref.add(7);
+ 		System.out.println(ref);
+ 		Object ref2=ref.clone();
+ 		System.out.println(ref2);
+	}
+}
