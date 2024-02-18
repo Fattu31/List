@@ -1,0 +1,33 @@
+package collection;
+
+import java.util.Arrays;
+
+public class Food {
+	String food;
+	int price;
+	double quantity;
+	String feedback;
+	Food(String food,int price, double quantity,String feedback){
+		this.food=food;
+		this.price=price;
+		this.quantity=quantity;
+		this.feedback=feedback;
+	}
+      public static void main(String[] args) {
+    
+    	  Food ref1=new Food("Pavbhaji",40,0.5,"Good");
+    	  Food ref2=new Food("Paneer",60,1,"veryGood");
+    	  Food ref3=new Food("ButterChicken",120,3,"Yummy"); 
+    	  Object ref[]= {ref1,ref2,ref3};
+    	  Object price1[]=new Object[ref.length];
+    	  
+          for(int i=0;i<price1.length;i++)
+          {
+        	  Food ref4= (Food)ref[i];
+        	  price1[i]=ref4.price;
+          }
+	       
+	     Arrays.sort(price1);
+	     System.out.println(price1[price1.length-1]);
+      }
+}
