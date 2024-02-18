@@ -1,0 +1,22 @@
+
+//9: Write a Java program to copy one array list into another.
+
+package collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CopyArrayList {
+         public static void main(String[] args) {
+			List ref=new ArrayList();
+			ref.add(12);
+            ref.add(30);
+            ref.add(40);
+            ref.add(50);
+            ref.add(10);
+            System.out.println(ref);
+            ArrayList ref1=new ArrayList(ref);
+            System.out.println(ref1);
+            
+		}
+} 
