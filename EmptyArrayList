@@ -1,0 +1,19 @@
+//17. Write a Java program to empty an array list.
+
+package collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmptyArrayList {
+    public static void main(String[] args) {
+		List ref=new ArrayList();
+		ref.add(10);
+		ref.add(20);
+		ref.add(100);
+		ref.add(200);
+		System.out.println(ref);
+		ref.clear();
+		System.out.println(ref);
+	}
+}
