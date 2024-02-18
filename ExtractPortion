@@ -1,0 +1,19 @@
+//12. Write a Java program to extract a portion of an array list.
+
+package collection;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class ExtractPortion {
+    public static void main(String[] args) {
+		List ref=Arrays.asList("hiee","bye","hello","see","you");
+		System.out.println(ref);
+		List ref1=new ArrayList(ref);
+		System.out.println(ref1);
+		System.out.println(ref1.subList(2, 5));
+		
+		
+	}
+}
