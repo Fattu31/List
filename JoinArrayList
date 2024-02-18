@@ -1,0 +1,27 @@
+//15. Write a Java program to join two array lists.
+
+package collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class JoinArrayList {
+      public static void main(String[] args) {
+		List ref=new ArrayList();
+		ref.add(10);
+		ref.add(20);
+		ref.add(30);
+		ref.add(5);
+		ref.add(7);
+		
+		List ref1=new ArrayList();
+		ref1.add(100);
+		ref1.add(200);
+		ref1.add(300);
+		ref1.add(50);
+		ref1.add(70);
+		
+	     ref1.addAll(ref);
+		System.out.println(ref1);
+	}
+}
