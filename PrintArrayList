@@ -1,0 +1,19 @@
+//1. Write a Java program to create an array list, add some colors (strings) and print out the collection.
+
+package collection;
+
+import java.util.ArrayList;
+
+public class Color {
+     public static void main(String[] args) {
+		  ArrayList<String> ref=new ArrayList();
+		   ref.add("Red");
+		   ref.add("Orange");
+		   ref.add("Green");
+		   ref.add("Blue");
+		   ref.add("voilet");
+		   ref.add("yellow");
+		   ref.add("indigo");
+		   System.out.println(ref);
+	}
+}
